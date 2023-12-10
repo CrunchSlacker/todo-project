@@ -69,7 +69,7 @@ export default function NavBar() {
                             }}
                         >
                             <Link
-                                href=""
+                                href={`/app/${Selection.inbox}`}
                                 className={clsx(
                                     "block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700",
                                     {
@@ -88,7 +88,7 @@ export default function NavBar() {
                             }}
                         >
                             <Link
-                                href=""
+                                href={`/app/${Selection.today}`}
                                 className={clsx(
                                     "block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700",
                                     {
@@ -107,7 +107,7 @@ export default function NavBar() {
                             }}
                         >
                             <Link
-                                href=""
+                                href={`/app/${Selection.upcoming}`}
                                 className={clsx(
                                     "block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700",
                                     {
