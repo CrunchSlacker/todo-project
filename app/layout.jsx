@@ -3,6 +3,7 @@ import SessionProvider from "./components/SessionProvider";
 import { getServerSession } from "next-auth";
 import { open_sans } from "./ui/fonts";
 import "@/app/ui/global.css";
+import "normalize.css";
 
 export default async function RootLayout({ children }) {
   const session = await getServerSession();
