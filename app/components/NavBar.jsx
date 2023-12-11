@@ -21,7 +21,7 @@ export default function NavBar() {
     setSelected(selection);
   };
   return (
-    <div className="w-1/12">
+    <div className="w-48">
       <div className="flex h-screen flex-col justify-between border-e bg-white">
         <div className="px-4 py-6">
           <h1>LOGO</h1>
