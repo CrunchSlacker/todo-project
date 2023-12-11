@@ -1,3 +1,3 @@
-export default function Page() {
-    return <p>Inbox Page</p>
+export default function Inbox() {
+  return <p>Inbox Page</p>;
 }

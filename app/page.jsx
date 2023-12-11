@@ -1,8 +1,8 @@
-import NavBar from "@/app/ui/nav-bar.jsx";
-export default function Page() {
-    return (
-        <div>
-            <NavBar />
-        </div>
-    );
+import NavBar from "@/app/components/NavBar.jsx";
+export default function Home() {
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 }
