@@ -1,7 +1,10 @@
 "use client";
+
+import { useSession } from "next-auth/react";
 import clsx from "clsx";
 import Link from "next/link";
 import { useState } from "react";
+import AuthButton from "./AuthButton";
 
 export default function NavBar() {
   const [selected, setSelected] = useState();
@@ -117,14 +120,7 @@ export default function NavBar() {
           </ul>
         </div>
         <div className="sticky inset-x-0 bottom-0 border-t border-gray-100 bg-white p-2">
-          <form action="/logout">
-            <button
-              type="submit"
-              className="group relative flex w-full justify-center rounded-lg px-2 py-1.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
-            >
-              Logout
-            </button>
-          </form>
+          <AuthButton />
         </div>
       </div>
     </div>
