@@ -3,19 +3,27 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 
 export default function AuthButton() {
-  const { data: session, status } = useSession();
-
-  const handleSignin = () => {
-    signIn();
-  };
-
-  const handleSignout = () => {
-    signOut();
-  };
+  const { data: status } = useSession();
 
   if (status === "authenticated") {
-    return <button onClick={handleSignout}>Logout</button>;
+    return (
+      <button
+        onClick={() => {
+          signOut();
+        }}
+      >
+        Logout
+      </button>
+    );
   } else {
-    return <button onClick={handleSignin}>Login</button>;
+    return (
+      <button
+        onClick={() => {
+          signIn();
+        }}
+      >
+        Login
+      </button>
+    );
   }
 }
