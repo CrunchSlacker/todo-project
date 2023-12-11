@@ -1,14 +1,15 @@
-'use client'
+"use client";
 import DateClass from "../../lib/date";
 
-export default function Page() {
-    const date = new DateClass();
-    let month = date.getMonth()
-    let day = date.getDayNum();
-    let year = date.getYear();
+export default function Upcoming() {
+  const date = new DateClass();
+  let month = date.getMonth();
+  let day = date.getDayNum();
+  let year = date.getYear();
 
-    return(
-        <h1 className="font-extrabold text-xl">{month + " " + day + ", " + year}</h1>
-
-    )
+  return (
+    <h1 className="font-extrabold text-xl">
+      {month + " " + day + ", " + year}
+    </h1>
+  );
 }

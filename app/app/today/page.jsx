@@ -1,3 +1,3 @@
-export default function Page() {
-    return <p>Today Page</p>
+export default function Today() {
+  return <p>Today Page</p>;
 }
